@@ -1,8 +1,9 @@
 https://fit-tecnologia.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29329990#overview
-11. Iniciando o primeiro projeto com Django e Venv
-17. [PARA ALUNOS AVANÇADOS] - Play
-24. Templates e renderização de HTML no Django
-27. Adicionando font-awesome no template
+##11. Iniciando o primeiro projeto com Django e Venv
+##17. [PARA ALUNOS AVANÇADOS] - Play
+##24. Templates e renderização de HTML no Django
+##27. Adicionando font-awesome no template
+##30. Criando a área de busca com form, input e button (search)
 
 python -m venv venv
 .\venv\Scripts\Activate

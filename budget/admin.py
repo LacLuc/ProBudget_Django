@@ -1,3 +1,16 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import category, monthYear
+
+
+class CategoryAdmin(admin.ModelAdmin):
+    ...
+
+
+class MonthYearAdmin(admin.ModelAdmin):
+    ...
+
+
+admin.site.register(category, CategoryAdmin)
+
+admin.site.register(monthYear, MonthYearAdmin)

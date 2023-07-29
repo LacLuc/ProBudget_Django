@@ -5,6 +5,9 @@ https://fit-tecnologia.udemy.com/course/curso-de-django-web-framework-com-python
 ##27. Adicionando font-awesome no template
 ##30. Criando a área de busca com form, input e button (search)
 
+Versão da tabela e CRUD...
+##55. Adicionando Recipes na admin do Django
+
 python -m venv venv
 .\venv\Scripts\Activate
 python.exe -m pip install --upgrade pip
@@ -26,6 +29,20 @@ rm -Rf projeto
 
 django-admin serve apenas para Criar
 django-admin startproject src .
+
+_____________________________________________________________________________
+Curso ==>> 52. makemigrations e migrate - Aplicando as migrações
+#iniciar as migrações auth
+python manage.py migrate
+
+#fazer as migrações
+python manage.py makemigrations
+
+#Gerar as migrações no banco
+python manage.py migrate
+-----------------------------------------------------------------------------
+#Criar o Super usuario
+python manage.py createsuperuser
 
 
 python manage.py startapp budget

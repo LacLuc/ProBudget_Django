@@ -1,0 +1,41 @@
+{% include 'partials/head.html' %}
+{% load static %}
+
+<body>
+  <div style="opacity:0" class="page-wrapper">
+    {% include 'partials/menu.html' %}
+   
+    <div class="formbold-main-wrapper">
+      <!-- Author: FormBold Team -->
+      <!-- Learn More: https://formbold.com -->
+      <div class="formbold-form-wrapper">
+        <img width="64" height="64" src="	https://img.icons8.com/?size=128&id=0OyRUGKETRhj&format=png"/>
+        <form action="https://formbold.com/s/FORM_ID" method="POST">
+          <div class="formbold-input-wrapp formbold-mb-3">
+            <label for="firstname" class="formbold-form-label"> Category </label>
+    
+            <div>
+              <input
+                type="text"
+                name="Categoryname"
+                id="Categoryname"
+                placeholder="Category"
+                class="formbold-form-input"
+              />                
+            </div>
+          </div>                   
+    
+          <button class="formbold-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <link rel="stylesheet" href="{% static 'css/stylesCad.css' %}">
+    
+    
+    
+    {% include 'partials/baseboard.html' %}
+
+{% include 'partials/scriptboard.html' %}             
+</body>
+</html>

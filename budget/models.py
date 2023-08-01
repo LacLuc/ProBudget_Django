@@ -24,18 +24,27 @@ class fontpayer(models.Model):
     Create_Data = models.DateTimeField(auto_now_add=True)
     Update_Date = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.fontpayer
+    
 
 class expensetype(models.Model):
     expensetype = models.CharField(max_length=150)    
     Create_Data = models.DateTimeField(auto_now_add=True)
     Update_Date = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.expensetype
+    
 
 class paytype(models.Model):
     paytype = models.CharField(max_length=150)   
     Create_Data = models.DateTimeField(auto_now_add=True)
     Update_Date = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.paytype
+    
 
 class aporty(models.Model):
     aporty = models.CharField(max_length=150)
@@ -44,11 +53,14 @@ class aporty(models.Model):
     MonthYear = models.ForeignKey(
         monthYear, on_delete=models.SET_NULL, null=True
     )
-    valor = models.DecimalField(max_digits=10, decimal_places=2)
+    valores = models.DecimalField(max_digits=10, decimal_places=2)
     status = models.CharField(max_length=10)    
     Create_Data = models.DateTimeField(auto_now_add=True)
     Update_Date = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.aporty
+    
 
 class credity(models.Model):
     credity = models.CharField(max_length=150)
@@ -60,6 +72,9 @@ class credity(models.Model):
     Create_Data = models.DateTimeField(auto_now_add=True)
     Update_Date = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.credity
+    
 
 class expense(models.Model):
     expense = models.CharField(max_length=150)
@@ -109,4 +124,6 @@ class recipe(models.Model):
     Create_Data = models.DateTimeField(auto_now_add=True)
     Update_Date = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return (self.recipe, self.fontpayer_ID, self.valor, self.recipedate)
     '''cover = models.ImageField(upload_to='budget/covers/%Y/%m/%d/')'''

@@ -1,0 +1,44 @@
+{% include 'partials/head.html' %}
+{% load static %}
+
+<body>
+  <div style="opacity:0" class="page-wrapper">
+    {% include 'partials/menu.html' %}
+   
+    <div class="formbold-main-wrapper">
+      <!-- Author: FormBold Team -->
+      <!-- Learn More: https://formbold.com -->
+      <div class="formbold-form-wrapper">
+        <img width="64" height="64" src="https://www.shutterstock.com/image-vector/social-marketing-user-desktop-computer-260nw-446098981.jpg"/>
+        <form action="https://formbold.com/s/FORM_ID" method="POST">
+          <div class="formbold-input-wrapp formbold-mb-3">
+            <label for="firstname" class="formbold-form-label"> Font_Payers </label>
+    
+            <div>
+              <input
+                type="text"
+                name="fontpayername"
+                id="fontpayername"
+                placeholder="Font_Payers"
+                class="formbold-form-input"
+              />                
+            </div>
+          </div>                   
+    
+          <button class="formbold-btn">Submit</button>
+        </form>
+      </div>
+
+    
+
+    </div>
+
+    <link rel="stylesheet" href="{% static 'css/stylesCad.css' %}">
+    
+    
+    
+    {% include 'partials/baseboard.html' %}
+
+{% include 'partials/scriptboard.html' %}             
+</body>
+</html>
